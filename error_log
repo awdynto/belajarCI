@@ -1,0 +1,4 @@
+[08-Aug-2016 20:19:41 Asia/Jakarta] PHP Fatal error:  Class 'Facebook\Facebook' not found in /home/rizqimau/public_html/demo/codeigniter/application/libraries/Facebook.php on line 67
+[08-Aug-2016 20:24:01 Asia/Jakarta] PHP Fatal error:  Class 'Facebook\Facebook' not found in /home/rizqimau/public_html/demo/codeigniter/application/libraries/Facebook.php on line 67
+[09-Aug-2016 18:11:28 Asia/Jakarta] PHP Fatal error:  Call to undefined method Google::test() in /home/rizqimau/public_html/demo/codeigniter/application/controllers/Welcome.php on line 27
+[16-Aug-2016 08:55:57 Asia/Jakarta] PHP Fatal error:  Call to undefined method CI_Email::bc() in /home/rizqimau/public_html/demo/codeigniter/application/controllers/Welcome.php on line 72
