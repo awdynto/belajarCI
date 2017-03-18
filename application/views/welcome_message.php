@@ -47,7 +47,7 @@
 	<input type="file" name="berkas" />
 	</p>
 	<p>
-		<input type="submit">
+		<input type="submit" value="simpan">
 	</p>
 </form>
 <script src="<?php echo base_url('js/jquery.min.js');?>"></script> 
@@ -107,11 +107,24 @@
 	                email: 'Email harus valid'
 	            },
 	            username: {	            
-	            	username: 'Username sudah ada'
+	            	required: 'Username harap diisi',
 	            },
 	            deskripsi: {
+	            	required: 'Deskripsi harap diisi',
 	            	minlength: 'Pesan minimal harus 100 karakter'
+	            },
+	            repassword: {
+	            	equalTo: 'Masukan password yang sama',
+	            	required: 'Repassword harap diisi'
+	            },
+	            password:{
+	            	required: 'password harap diisi',
+	            	minlength: 'minimal 8 karakter huruf kapital dan angka'
+	            },
+	            tgl:{
+	            	required: 'Tgl harap diisi',
 	            }
+
 	        },        
 	        // Jika validasi berhasil atau sudah tidak error, maka script pada blok ini akan dieksekusi
 	        submitHandler: function(form) {	           	  

@@ -1,3 +1,1 @@
-# codeigniter-validation-with-jqueryvalidate
-Create validation client side using jquery validate on Codeigniter
-
+# belajar ci pake validasi js
