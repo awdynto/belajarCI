@@ -32,11 +32,11 @@
 	</p>
 	<p>
 		Password : <br />
-		<input type="password" name="password" id="password"/>
+		<input type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>
 	</p>
 		<p>
 		Re-password : <br />
-		<input type="password" name="repassword" id="repassword"/>
+		<input type="password" name="repassword" id="repassword" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/>
 	</p>
 	<p>
 		Deskripsi : <br />
@@ -111,15 +111,17 @@
 	            },
 	            deskripsi: {
 	            	required: 'Deskripsi harap diisi',
-	            	minlength: 'Pesan minimal harus 100 karakter'
+	            	minlength: 'Deskripsi minimal harus 100 karakter'
 	            },
 	            repassword: {
 	            	equalTo: 'Masukan password yang sama',
-	            	required: 'Repassword harap diisi'
+	            	required: 'Repassword harap diisi',
+	            	pattern: 'Gunakan kombinasi minimal 8 karakter huruf dan angka'
 	            },
 	            password:{
 	            	required: 'password harap diisi',
-	            	minlength: 'minimal 8 karakter huruf kapital dan angka'
+	            	minlength: 'minimal 8 karakter huruf kapital dan angka',
+	            	pattern: 'Gunakan kombinasi minimal 8 karakter huruf dan angka'
 	            },
 	            tgl:{
 	            	required: 'Tgl harap diisi',
